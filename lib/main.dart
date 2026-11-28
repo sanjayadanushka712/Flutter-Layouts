@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -99,17 +99,13 @@ class MyApp extends StatelessWidget {
                         spacing: 16.0,
                         children: [
                           Expanded(
-                            flex: 2,
                             child: Container(
                               width: double.infinity,
-                              color: Colors.amber,
-                            ),
-                          ),
-                          Expanded(
-                            flex: 1,
-                            child: Container(
-                              width: double.infinity,
-                              color: Colors.amber,
+                              // color: Colors.amber,
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 5, 3, 180),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
                             ),
                           ),
                         ],
@@ -125,21 +121,33 @@ class MyApp extends StatelessWidget {
                             flex: 1,
                             child: Container(
                               width: double.infinity,
-                              color: const Color.fromARGB(255, 5, 3, 180),
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 5, 3, 180),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              // color: const Color.fromARGB(255, 5, 3, 180),
                             ),
                           ),
                           Expanded(
                             flex: 2,
                             child: Container(
                               width: double.infinity,
-                              color: const Color.fromARGB(255, 5, 3, 180),
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 5, 3, 180),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              // color: const Color.fromARGB(255, 5, 3, 180),
                             ),
                           ),
                           Expanded(
                             flex: 1,
                             child: Container(
                               width: double.infinity,
-                              color: const Color.fromARGB(255, 5, 3, 180),
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 5, 3, 180),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              // color: const Color.fromARGB(255, 5, 3, 180),
                             ),
                           ),
                         ],
@@ -147,6 +155,10 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height:
+                    20, // Adds space between the circles and the bottom of the screen
               ),
               Row(
                 mainAxisAlignment:
